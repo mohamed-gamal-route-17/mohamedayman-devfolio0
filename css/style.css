@@ -1,0 +1,841 @@
+/*placing the chevron down beside the dropdown tab inside of the navbar*/
+.mylinkV::after {
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f078';
+
+
+
+}
+
+/*MULTI-LEVEL DROP DOWN MENU*/
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+    --bs-dropdown-border-radius: 0;
+    --bs-dropdown-link-hover-color: #0d6efd;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
+
+    transform: translate(80%, 0);
+    display: block;
+    opacity: 0;
+
+    transition: all 0.4s;
+
+}
+
+
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+    transform: translate(100%, 0);
+    display: block;
+    opacity: 1;
+}
+
+/*==========================*/
+
+.theNavbar{
+    opacity:0.9;
+}
+.myNavItem {
+    position: relative;
+}
+
+.myNavLink {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+
+}
+
+.myNavLink::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 15px;
+    height: 2px;
+    width: 0px;
+    transition: 0.2s all;
+    background-color: white;
+    transform-origin: top right;
+
+}
+
+
+
+
+
+.myNavLink:hover::before {
+    width: 80%;
+
+}
+
+.homeSection {
+    background-image: url('../Images/hero-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+
+
+    background-repeat: no-repeat;
+ 
+  
+    background-position: center center;
+
+    z-index: 100000000000000000000000000000;
+}
+
+.myNavbarBrand {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    --bs-navbar-brand-hover-color: white;
+}
+
+
+/*========================================*/
+.myNav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: white;
+    --bs-nav-link-disabled-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/*===========================*/
+.myDropDownM {
+    --bs-dropdown-border-radius: 0;
+    --bs-dropdown-link-hover-color: #0d6efd;
+}
+
+/*============================*/
+.myDropdDownItem::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+
+}
+
+/*=============================*/
+.container h1 {
+    font-size: 4.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+/*=============================*/
+.myP {
+    color: transparent;
+
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+
+.myP::after {
+    content: "";
+
+    animation: typing 3s infinite alternate;
+
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+
+
+}
+
+@keyframes typing {
+
+    0% {
+        content: "";
+    }
+
+    10% {
+        content: "D|";
+    }
+
+    20% {
+        content: "De";
+    }
+
+    30% {
+        content: "Dev|";
+    }
+
+    40% {
+        content: "Deve";
+    }
+
+    50% {
+        content: "Develop|";
+    }
+
+    60% {
+        content: "Developer";
+    }
+
+    70% {
+        content: "Develop|";
+    }
+
+    80% {
+        content: "Devel";
+    }
+
+    85% {
+        content: "Dev|";
+    }
+
+    90% {
+        content: "D";
+    }
+
+    100% {
+        content: "";
+    }
+
+
+
+}
+
+/*=======================*/
+
+.imageLayer {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+
+/*============================*/
+.boldI {
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+
+/*==============================*/
+.box {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 3em;
+    padding-left: 3em;
+
+
+    background-color: #fff;
+    margin-bottom: 3rem;
+
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+/*===============================*/
+
+.aboutSection {
+    padding-top: 4rem;
+    background-color: rgba(175, 175, 175, 0.2);
+}
+
+.imageContainer {
+    margin-bottom: 2rem;
+}
+
+.imageContainer img {
+    margin-left: 10px;
+}
+
+/*================================*/
+.progress {
+    --bs-progress-border-radius: 0;
+}
+
+.makeBold {
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+
+}
+
+/*=================================*/
+.titleA {
+    margin-bottom: 3rem;
+}
+
+.titleA h5 {
+    font-size: 2rem;
+
+}
+
+.lineBefTitleA {
+    position: relative;
+}
+
+.lineBefTitleA::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 160px;
+    bottom: -12px;
+}
+
+/*=============================*/
+/*SERVICES SECTION*/
+.servicesSection {
+    background-color: rgba(175, 175, 175, 0.2);
+}
+
+.servicesTitle {
+    margin-bottom: 4rem;
+}
+
+.servicesTitle h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.servicesTitle p {
+    color: #4e4e4e;
+}
+
+.servicesLine {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+.servicesContentPartContainer {
+    background-color: white;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.iconContainer {
+
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    border: 10px solid;
+    border-color: #0078ff;
+    transition: all 0.4s;
+
+
+}
+
+.iconContainer:hover {
+    background-color: #0d6efd;
+    border-color: #b8cdee;
+    color: white;
+
+}
+
+/*COUNTER SECTION*/
+
+.counterSection {
+    padding: 8rem 0;
+    background-image: url('../Images/counters-bg.jpg');
+    background-size: cover;
+
+    position: relative;
+
+
+}
+
+.counterSectionLayer {
+    background-color: #0078ff;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+
+}
+
+.counterContentContainer {
+    opacity: 0.7;
+}
+
+.iconCounterContainer {
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    border-radius: 50%;
+    line-height: 1.5;
+    margin: 0 auto;
+    border: 7px solid;
+    border-color: white;
+    color: white;
+
+
+
+}
+
+.counterDescriptionContainer {
+    color: white;
+}
+
+.counterDescriptionContainer {
+    margin-bottom: 0;
+
+}
+
+.p-number {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+/*PORTFOLIO SECTION*/
+
+.portfolioSection {
+    background-color: rgba(175, 175, 175, 0.2);
+    padding: 50px;
+}
+
+.portfolioTitle {
+    margin-bottom: 4rem;
+    padding-top: 3em;
+}
+
+.portfolioTitle h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.portfolioTitle p {
+    color: #4e4e4e;
+}
+
+.portfolioLine {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+
+
+
+.myBreadCrumb {
+    font-size: 0.8rem;
+}
+
+
+.myBreadCrumbItem a {
+    text-decoration: none;
+
+
+}
+
+
+
+.cardIconContainer {
+    font-size: 1.5rem;
+
+    color: #0078ff;
+
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+
+
+    border: 3px solid;
+    border-color: #0078ff;
+
+}
+
+
+.cardImageContainer {
+    overflow: hidden;
+
+
+
+}
+
+.cardImageContainer img {
+    transition: all 1s;
+}
+
+.portfolioSection .card:hover img {
+    transform: scale(1.3);
+
+
+}
+
+/*TESTIMONIAL SECTION*/
+.testimonialSection {
+    background-image: url('../Images/overlay-bg.jpg');
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    padding: 8rem 0;
+
+
+
+
+
+}
+
+
+
+.myCarouselCaption {
+    position: unset;
+    color: white;
+}
+
+.myCarouselIndicators {
+    bottom: -20px;
+}
+
+.myCarouselIndicators [data-bs-target] {
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+
+
+
+
+}
+
+.paragraphEdit {
+    padding: 0 13rem;
+}
+
+.testimonialLayer {
+    background-color: #0078ff;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+/*BLOG SECTION*/
+.blogSection {
+    background-color: rgba(175, 175, 175, 0.2);
+    padding: 50px;
+}
+
+.blogTitle {
+    margin-bottom: 4rem;
+    padding-top: 3em;
+}
+
+.blogTitle h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.blogTitle p {
+    color: #4e4e4e;
+}
+
+.blogLine {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+
+.blogCardDescription a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.3rem;
+
+}
+
+.blogCardTitle {
+    margin-top: 15px;
+}
+
+.blogCardDescription {
+    position: relative
+}
+
+.category {
+    padding: 0 15px 5px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0078ff;
+
+    
+
+}
+
+.category h6{
+    font-size:0.7rem;
+}
+
+.categoryContent{
+    position: relative;
+    top: 50%;
+    left:0;
+    transform: translateY(50%);
+}
+
+.blogCardContent{
+    color: #4e4e4e;
+}
+.picAndD img{
+    width: 32px;
+    height: 32px;
+}
+
+.timeD i{
+    color: #4e4e4e;
+}
+
+.colorChange{
+    --bs-secondary-color: black;
+    
+}
+
+/*FORM SECTION*/
+
+.formSection {
+    background-image: url('../Images/overlay-bg.jpg');
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 0.5rem;
+
+    /*creating the shadow effect here*/
+
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5)
+
+    
+
+}
+
+.formLayer {
+    background-color: #0078ff;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    
+
+    
+
+
+}
+
+.address::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f3c5';
+    margin-right:10px;
+    color: #0078ff;
+
+}
+
+.phone::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f3cd';
+    margin-right:10px;
+    color: #0078ff;
+   
+}
+
+.email::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f0e0';
+    margin-right:10px;
+    color: #0078ff;
+}
+
+.iconBox{
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    line-height: 1.6;
+    /* margin: 0 auto; */
+    margin: 0 15px 0 0;
+    border: 3px solid;
+    border-color: #0078ff;
+    transition: all 0.4s;
+
+}
+
+.iconBox:hover {
+    background-color: #0d6efd;
+    border-color: #b8cdee;
+    color: white;
+
+}
+
+.myFormControl{
+    border-radius:0;
+}
+
+.myFormContainer{
+    /* margin-top: 8rem; */
+    padding: 4rem;
+    margin-bottom: 3rem;
+
+    /*IS THIS RIGHT?*/
+    position: relative;
+   
+}
+
+.buttonContainer button{
+    background: #0078ff;
+    border: 1px solid white;
+    padding: 10px 24px;
+    color: #fff;
+
+    margin-top: 40px;
+    font-size: 1.2rem;
+    transition: all 0.4s;
+
+    
+}
+
+.buttonContainer button:hover {
+    background-color: rgba(13, 110, 253,0.5);
+    
+    border: 1px solid rgb(128, 128, 128,0.5);
+    color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+
+
+
+
+}
+
+.formSPart1TitleContainer{
+    margin-bottom: 3em;
+}
+
+.formSPart1TitleContainer h5{
+    font-size:2rem;
+    position: relative;
+
+}
+
+.formSPart1TitleContainer h5::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 350px;
+    bottom: -12px;
+   
+
+}
+
+.formSPart2TitleContainer{
+    margin-bottom: 3em;
+}
+
+.formSPart2TitleContainer h5{
+    font-size:2rem;
+   
+    position: relative;
+}
+
+.formSPart2TitleContainer h5::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 200px;
+    bottom: -12px;
+   
+
+}
+
+/*Footer*/
+
+
+
+.linkEdit{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+.upButtonContainer{
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    line-height: 1.6;
+    /* margin: 0 auto; */
+    margin: 0 15px 0 0;
+    border: 3px solid;
+    border-color: #0078ff;
+    background-color: #0078ff;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    /*HOW DO I MAKE IT DISAPPEAR WHEN IT REACHES THE FIRST SECTION??*/
+
+    margin-bottom: 20px;
+}
+/*========ADDING A MEDIA QUERY HERE BECAUSE I AM NOT SURE IF THEIR IS ANOTHER APPROACH*/
+
+@media (max-width: 600px) {
+    .paragraphEdit {
+      padding: 0;
+    }
+  }
+
+
